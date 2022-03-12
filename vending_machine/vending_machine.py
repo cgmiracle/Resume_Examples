@@ -60,13 +60,13 @@ class vending_machine:
             change = int(inserted_cash) - int(selection_cost)
             change = int(change) * .01
             if change >= 1.5:
-                another_drink = input(f'You still have ${change} remaining. Would you like another drink? [Y/N]')
+                another_drink = input(f'You still have ${change}0 remaining. Would you like another drink? [Y/N]')
                 if another_drink.upper() == 'Y':
                         inserted_cash = (change * 100)
                         p.select_drink()
-                else: print(f"Thank you, your change is ${change}, enjoy your {drink_selection}!")
+                else: print(f"Thank you, your change is ${change}0, enjoy your {drink_selection}!")
             else:
-                print(f"Thank you, your change is ${change}, enjoy your {drink_selection}!")
+                print(f"Thank you, your change is ${change}0, enjoy your {drink_selection}!")
 
 p = vending_machine(1)
 p
